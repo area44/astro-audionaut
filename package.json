@@ -14,16 +14,16 @@
     "check": "biome check --write ."
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.11",
-    "astro": "^5.12.9",
+    "@tailwindcss/vite": "^4.1.12",
+    "astro": "^5.13.2",
     "daisyui": "^5.0.50",
     "dayjs": "^1.11.13",
     "sharp": "^0.34.3",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
     "@area44/biome-config": "^2.2.5",
-    "@biomejs/biome": "^2.1.4",
-    "@types/node": "^22.17.1"
+    "@biomejs/biome": "^2.2.0",
+    "@types/node": "^22.17.2"
   }
 }
