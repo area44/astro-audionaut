@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
-    "astro": "^5.13.2",
+    "astro": "^5.13.3",
     "daisyui": "^5.0.50",
     "dayjs": "^1.11.13",
     "sharp": "^0.34.3",
@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@area44/biome-config": "^2.2.5",
-    "@biomejs/biome": "^2.2.0",
+    "@biomejs/biome": "^2.2.2",
     "@types/node": "^22.17.2"
   }
 }
