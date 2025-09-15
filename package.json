@@ -15,15 +15,15 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
-    "astro": "^5.13.5",
-    "daisyui": "^5.1.8",
+    "astro": "^5.13.7",
+    "daisyui": "^5.1.12",
     "dayjs": "^1.11.18",
     "sharp": "^0.34.3",
     "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
     "@area44/biome-config": "^2.2.5",
-    "@biomejs/biome": "^2.2.3",
-    "@types/node": "^22.18.1"
+    "@biomejs/biome": "^2.2.4",
+    "@types/node": "^22.18.3"
   }
 }
