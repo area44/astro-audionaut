@@ -7,7 +7,7 @@ const site = process.env.VERCEL
     ? "https://astro-audionaut.vercel.app"
     : `https://${process.env.VERCEL_URL}`
   : (process.env.SITE ?? "http://localhost:4321");
-const base = process.env.base || "/";
+const base = process.env.BASE || "/";
 
 // https://astro.build/config
 export default defineConfig({
