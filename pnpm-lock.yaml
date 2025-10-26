@@ -15,8 +15,8 @@ importers:
         specifier: ^5.15.1
         version: 5.15.1(@types/node@22.18.12)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.52.4)(typescript@5.5.4)
       daisyui:
-        specifier: ^5.3.9
-        version: 5.3.9
+        specifier: ^5.3.10
+        version: 5.3.10
       dayjs:
         specifier: ^1.11.18
         version: 1.11.18
@@ -829,8 +829,8 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  daisyui@5.3.9:
-    resolution: {integrity: sha512-741x1pGGSGHcrBYtdE7iKbqW1OoiijYdAZ8oJPZR9MhSKLcMBlHjKfN3YlM2/K7t5jd7O0sg4SqkVNPylalRFw==}
+  daisyui@5.3.10:
+    resolution: {integrity: sha512-vmjyPmm0hvFhA95KB6uiGmWakziB2pBv6CUcs5Ka/3iMBMn9S+C3SZYx9G9l2JrgTZ1EFn61F/HrPcwaUm2kLQ==}
 
   dayjs@1.11.18:
     resolution: {integrity: sha512-zFBQ7WFRvVRhKcWoUh+ZA1g2HVgUbsZm9sbddh8EC5iv93sui8DVVz1Npvz+r6meo9VKfa8NyLWBsQK1VvIKPA==}
@@ -2425,7 +2425,7 @@ snapshots:
 
   cssesc@3.0.0: {}
 
-  daisyui@5.3.9: {}
+  daisyui@5.3.10: {}
 
   dayjs@1.11.18: {}
 
