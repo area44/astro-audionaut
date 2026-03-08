@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@area44/biome-config": "^2.3.3",
-    "@biomejs/biome": "^2.4.4",
-    "@types/node": "^24.11.0"
+    "@biomejs/biome": "^2.4.6",
+    "@types/node": "^24.12.0"
   }
 }
