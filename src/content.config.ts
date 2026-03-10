@@ -13,10 +13,12 @@ const audioCollection = defineCollection({
     audio: z.number().optional(),
     season: z.number().optional(),
     audioType: z.string().optional(),
-    duration: z.string().regex(
-      /^(\d{1,2}:)?\d{1,2}:\d{2}$/,
-      "Invalid duration format (MM:SS or HH:MM:SS)"
-    ),
+    duration: z
+      .string()
+      .regex(
+        /^(\d{1,2}:)?\d{1,2}:\d{2}$/,
+        "Invalid duration format (MM:SS or HH:MM:SS)"
+      ),
     size: z.number(),
   }),
 });
