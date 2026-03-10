@@ -5,22 +5,27 @@ import AudioPlayer from "@/components/AudioPlayer.astro";
 import Pagination from "@/components/Pagination.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { siteConfig } from "@/site.config";
+import type { GetStaticPaths, Page } from "astro";
 
 // getStaticPaths function to paginate collection
-export async function getStaticPaths({ paginate }) {
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
   const audioCollection = await getCollection("audioCollection");
 
   // Sort newest first
   audioCollection.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
   return paginate(audioCollection, { pageSize: siteConfig.pageSize });
-}
+};
 
 // Props from Astro
+interface Props {
+  page: Page<CollectionEntry<"audioCollection">>;
+}
+
 const { page } = Astro.props;
 
 // Cast page.data to correct type
-const entries = page.data as CollectionEntry<"audioCollection">[];
+const entries = page.data;
 ---
 
 <BaseLayout

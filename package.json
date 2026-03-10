@@ -23,7 +23,9 @@
   },
   "devDependencies": {
     "@area44/biome-config": "^2.3.3",
+    "@astrojs/check": "^0.9.7",
     "@biomejs/biome": "^2.4.6",
-    "@types/node": "^24.12.0"
+    "@types/node": "^24.12.0",
+    "typescript": "^5.9.3"
   }
 }

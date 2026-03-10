@@ -95,19 +95,19 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const audio = document.getElementById("audio-element");
-    const playToggle = document.getElementById("play-icon");
-    const muteToggle = document.getElementById("mute-icon");
-    const seekSlider = document.getElementById("seek-slider");
-    const currentTimeDisplay = document.getElementById("current-time");
-    const durationDisplay = document.getElementById("duration");
-    const audioLoading = document.getElementById("audio-loading");
-    const audioControl = document.getElementById("audio-control");
-    const musicPlayer = document.getElementById("audio-player-container");
-    const footer = document.querySelector(".footer > div");
+    const audio = document.getElementById("audio-element") as HTMLAudioElement;
+    const playToggle = document.getElementById("play-icon") as HTMLInputElement;
+    const muteToggle = document.getElementById("mute-icon") as HTMLInputElement;
+    const seekSlider = document.getElementById("seek-slider") as HTMLInputElement;
+    const currentTimeDisplay = document.getElementById("current-time") as HTMLElement;
+    const durationDisplay = document.getElementById("duration") as HTMLElement;
+    const audioLoading = document.getElementById("audio-loading") as HTMLElement;
+    const audioControl = document.getElementById("audio-control") as HTMLElement;
+    const musicPlayer = document.getElementById("audio-player-container") as HTMLElement;
+    const footer = document.querySelector(".footer > div") as HTMLElement;
     const playButtons = document.querySelectorAll(".card-pay-buttons");
 
-    const formatTime = (secs) => {
+    const formatTime = (secs: number) => {
       const minutes = Math.floor(secs / 60);
       const seconds = Math.floor(secs % 60)
         .toString()
@@ -115,7 +115,7 @@
       return `${minutes}:${seconds}`;
     };
 
-    function normalizeUrl(url) {
+    function normalizeUrl(url: string) {
       try {
         return new URL(url, location.origin).href;
       } catch {
@@ -212,7 +212,7 @@
       });
     });
 
-    function disableOtherButtons(activeId) {
+    function disableOtherButtons(activeId: string | null) {
       playButtons.forEach((btn) => {
         if (!(btn instanceof HTMLInputElement)) return;
 
@@ -227,7 +227,7 @@
           !audio.paused && isSameAudio && (isActive || activeId === null);
         btn.checked = shouldBeChecked;
 
-        const card = btn.closest(".audio-card");
+        const card = btn.closest(".audio-card") as HTMLElement | null;
         if (card) {
           card.dataset.active = shouldBeChecked ? "true" : "false";
         }
@@ -236,7 +236,7 @@
 
     document.addEventListener("keydown", (event) => {
       const target = document.activeElement;
-      if (["INPUT", "TEXTAREA"].includes(target.tagName)) return;
+      if (!target || ["INPUT", "TEXTAREA"].includes(target.tagName)) return;
 
       switch (event.code) {
         case "Space":
