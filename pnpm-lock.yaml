@@ -12,8 +12,8 @@ importers:
         specifier: ^4.2.1
         version: 4.2.1(vite@7.3.1(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.31.1))
       astro:
-        specifier: ^6.0.0
-        version: 6.0.0(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.31.1)(rollup@4.53.3)(typescript@5.5.4)
+        specifier: ^6.0.1
+        version: 6.0.1(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.31.1)(rollup@4.53.3)(typescript@5.5.4)
       daisyui:
         specifier: ^5.5.19
         version: 5.5.19
@@ -775,8 +775,8 @@ packages:
   array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
 
-  astro@6.0.0:
-    resolution: {integrity: sha512-i24mxDGXUzyfKfE4IcWIiLBv9ENDVz98u/TLhjkknGkt/2KIjkR4Q0HeabtaVmIhyWECGd2E61ZeBdFuJ902xw==}
+  astro@6.0.1:
+    resolution: {integrity: sha512-G6AGlYMYlRmOq8kh3wKcVwwvGwNias6wZuD1n9qmhdOKR3W3sgi/L7bq5VPaN1GS1MMygBTdUYzsOFGeGTaFPQ==}
     engines: {node: ^20.19.1 || >=22.12.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -964,10 +964,6 @@ packages:
 
   fontace@0.4.1:
     resolution: {integrity: sha512-lDMvbAzSnHmbYMTEld5qdtvNH2/pWpICOqpean9IgC7vUbUJc3k+k5Dokp85CegamqQpFbXf0rAVkbzpyTA8aw==}
-
-  fontkitten@1.0.0:
-    resolution: {integrity: sha512-b0RdzQeztiiUFWEDzq6Ka26qkNVNLCehoRtifOIGNbQ4CfxyYRh73fyWaQX/JshPVcueITOEeoSWPy5XQv8FUg==}
-    engines: {node: '>=20'}
 
   fontkitten@1.0.3:
     resolution: {integrity: sha512-Wp1zXWPVUPBmfoa3Cqc9ctaKuzKAV6uLstRqlR56kSjplf5uAce+qeyYym7F+PHbGTk+tCEdkCW6RD7DX/gBZw==}
@@ -1809,7 +1805,7 @@ snapshots:
 
   '@capsizecss/unpack@4.0.0':
     dependencies:
-      fontkitten: 1.0.0
+      fontkitten: 1.0.3
 
   '@clack/core@1.1.0':
     dependencies:
@@ -2244,7 +2240,7 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro@6.0.0(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.31.1)(rollup@4.53.3)(typescript@5.5.4):
+  astro@6.0.1(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.31.1)(rollup@4.53.3)(typescript@5.5.4):
     dependencies:
       '@astrojs/compiler': 3.0.0
       '@astrojs/internal-helpers': 0.8.0
@@ -2505,10 +2501,6 @@ snapshots:
   fontace@0.4.1:
     dependencies:
       fontkitten: 1.0.3
-
-  fontkitten@1.0.0:
-    dependencies:
-      tiny-inflate: 1.0.3
 
   fontkitten@1.0.3:
     dependencies:

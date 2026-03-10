@@ -7,19 +7,19 @@ const audioCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
-    audioUrl: z.url(),
-    date: z.date(),
+    audioUrl: z.string(),
+    date: z.coerce.date(),
     cover: z.string().optional(),
     audio: z.number().optional(),
     season: z.number().optional(),
     audioType: z.string().optional(),
-    duration: z
+    duration: z.coerce
       .string()
       .regex(
         /^(\d{1,2}:)?\d{1,2}:\d{2}$/,
         "Invalid duration format (MM:SS or HH:MM:SS)"
       ),
-    size: z.number(),
+    size: z.coerce.number(),
   }),
 });
 
