@@ -8,7 +8,7 @@ import { siteConfig } from "@/site.config";
 
 // getStaticPaths function to paginate collection
 export async function getStaticPaths({ paginate }) {
-  const audioCollection = await getCollection("audio");
+  const audioCollection = await getCollection("audioCollection");
 
   // Sort newest first
   audioCollection.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
@@ -20,7 +20,7 @@ export async function getStaticPaths({ paginate }) {
 const { page } = Astro.props;
 
 // Cast page.data to correct type
-const entries = page.data as CollectionEntry<"audio">[];
+const entries = page.data as CollectionEntry<"audioCollection">[];
 ---
 
 <BaseLayout
