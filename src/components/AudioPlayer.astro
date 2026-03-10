@@ -177,9 +177,11 @@
         const rawUrl = btn.dataset.audioUrl;
         if (!rawUrl) return;
 
-        const encodedUrl = rawUrl.startsWith("http")
-          ? rawUrl
-          : encodeURI(rawUrl);
+        const hasEncodedChars = rawUrl.includes("%");
+        const encodedUrl =
+          rawUrl.startsWith("http") || hasEncodedChars
+            ? rawUrl
+            : encodeURI(rawUrl);
         const fullUrl = normalizeUrl(encodedUrl);
         const isSameAudio = normalizeUrl(audio.src) === fullUrl;
 
