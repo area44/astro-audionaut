@@ -1,11 +1,11 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
+import type { GetStaticPaths, Page } from "astro";
 import AudioCard from "@/components/AudioCard.astro";
 import AudioPlayer from "@/components/AudioPlayer.astro";
 import Pagination from "@/components/Pagination.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { siteConfig } from "@/site.config";
-import type { GetStaticPaths, Page } from "astro";
 
 // getStaticPaths function to paginate collection
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
