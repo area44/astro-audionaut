@@ -1,0 +1,19 @@
+name: autofix.ci # needed to securely identify the workflow
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  lint-format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Run lint/format scripts
+        uses: area44/workflows/lint-format@v4.1.0
