@@ -26,6 +26,6 @@
     "@astrojs/check": "^0.9.9",
     "@biomejs/biome": "^2.5.3",
     "@types/node": "^24.13.3",
-    "typescript": "^6.0.3"
+    "typescript": "^7.0.2"
   }
 }
