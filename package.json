@@ -1,6 +1,6 @@
 {
   "name": "@area44/astro-audionaut",
-  "version": "25.07.30",
+  "version": "26.08.03",
   "private": true,
   "description": "An audio player built with Astro.",
   "author": "AREA44",
@@ -9,9 +9,9 @@
     "dev": "astro dev",
     "preview": "astro preview",
     "start": "astro dev",
-    "format": "biome format --write .",
-    "lint": "biome lint --write .",
-    "check": "biome check --write ."
+    "format": "biome format --write",
+    "lint": "biome lint --write",
+    "check": "biome check --write"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
